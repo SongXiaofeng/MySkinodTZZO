@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.skinod.tzzo">
+
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:name=".skinod.application.Myapplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.baidu.speech.APP_ID"
+            android:value="10873693" />
+        <meta-data
+            android:name="com.baidu.speech.API_KEY"
+            android:value="26Q2C9shyPEvkAVamAA2AB20" />
+        <meta-data
+            android:name="com.baidu.speech.SECRET_KEY"
+            android:value="71gqktbdXwxwUuXVxrGCuguQMl0EUkV9" />
+        <!-- 请确认集成后的包名是否正确，本demo的包名是com.baidu.speech.recognizerdemo，在build.gradle文件中查看 -->
+
+        <activity
+            android:name=".skinod.activity.StartActivity"
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="com.baidu.speech.VoiceRecognitionService"
+            android:exported="false" />
+
+        <activity
+            android:name=".baiduasrtts.SynthActivity"
+            android:label="离在线语音合成" />
+        <activity
+            android:name=".baiduasrtts.MiniActivity"
+            android:label="精简版合成" />
+        <activity
+            android:name=".baiduasrtts.SaveFileActivity"
+            android:label="保存合成后的音频" />
+        <!-- <activity android:name=".baiduasrtts.SynthActivity"></activity> -->
+        <activity
+            android:name=".baiduasrtts.setting.OnlineSetting"
+            android:configChanges="orientation|keyboardHidden|screenLayout"
+            android:label="在线识别设置"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.DeviceDefault.Light" />
+        <activity
+            android:name=".baiduasrtts.setting.OfflineSetting"
+            android:configChanges="orientation|keyboardHidden|screenLayout"
+            android:label="离线命令词设置"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.DeviceDefault.Light" />
+        <activity
+            android:name=".baiduasrtts.setting.NluSetting"
+            android:configChanges="orientation|keyboardHidden|screenLayout"
+            android:label="语义设置"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.DeviceDefault.Light" />
+        <activity
+            android:name=".baiduasrtts.setting.AllSetting"
+            android:configChanges="orientation|keyboardHidden|screenLayout"
+            android:label="全部识别设置"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.DeviceDefault.Light" />
+        <activity android:name=".baiduasrtts.MybaiduBaseActivity" />
+        <activity
+            android:name=".skinod.activity.TranslatorActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".skinod.activity.LanguagechooseActivity"
+            android:theme="@android:style/Theme.Translucent" />
+        <activity
+            android:name=".skinod.activity.PlayMusicActivity"
+            android:theme="@android:style/Theme.Translucent" />
+        <service android:name=".skinod.service.BaiduBinderService" />
+        <activity android:name=".skinod.wifi.WifiConnectActivity" />
+        <activity android:name=".skinod.keyboard.NormalKeyBoardActivity" />
+   <!--     <activity android:name=".skinod.setting.DisplaySettings"></activity>-->
+    </application>
+
+</manifest>

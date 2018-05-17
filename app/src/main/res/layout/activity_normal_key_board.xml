@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:clickable="false"
+            android:layout_gravity="center_vertical"
+            android:background="@mipmap/keyboard_arrwo_left"
+            android:contentDescription="@null" />
+
+
+        <EditText
+            android:id="@+id/textAmount"
+            android:layout_width="362dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:background="#FFFFFF"
+            android:inputType="numberDecimal"
+            android:labelFor="@+id/textAmount"
+            android:padding="2dp"
+            android:textColor="#333333"
+            android:textSize="22sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:clickable="false"
+            android:layout_gravity="center_vertical"
+            android:background="@mipmap/keyboard_arrwo_right"
+            android:contentDescription="@null" />
+
+    </LinearLayout>
+
+    <com.skinod.tzzo.skinod.keyboard.VirtualKeyboardView
+        android:id="@+id/virtualKeyboardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+      />
+
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="num_one">01</string>
+    <string name="dialogue">对话</string>
+
+    <string name="num_two">02</string>
+    <string name="settings">设置</string>
+
+    <string name="num_three">03</string>
+    <string name="dialer">拨号</string>
+
+    <string name="num_four">04</string>
+    <string name="recorder">录音</string>
+</resources>

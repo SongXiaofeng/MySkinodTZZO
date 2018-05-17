@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/main_background"
+    android:orientation="vertical"
+    android:gravity="center_vertical">
+
+    <TextView
+        android:id="@+id/conversation_tv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="@string/num_one"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/main_text1_size"/>
+
+
+    <TextView
+        android:id="@+id/conversation_tv2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/dialogue"
+        android:textColor="@android:color/white"
+        android:layout_marginLeft="10dp"
+        android:textSize="@dimen/main_text2_size" />
+
+
+    <ImageView
+        android:id="@+id/settings_iv"
+        android:layout_width="@dimen/iv_width"
+        android:layout_height="@dimen/iv_width"
+        android:background="@mipmap/ic_conversion"
+        android:layout_marginLeft="10dp"/>
+
+</LinearLayout>

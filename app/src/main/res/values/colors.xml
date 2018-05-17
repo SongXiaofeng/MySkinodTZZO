@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="deep_grep">#5C5C5C</color>
+    <color name="black">#000000</color>
+    <color name="shallow_grep">#C4C4C4</color>
+    <color name="my_blue">#048fe7</color>
+    <color name="colorGray">#33000000</color>
+    <color name="touming">#00000000</color>
+    <color name="red">#ff0000</color>
+    <color name="colorWhite">#FFFFFF</color>
+
+    <color name="green">#689c13</color>
+    <color name="white">#FFFFFF</color>
+    <color name="gray">#818181</color>
+    <color name="light_gray">#BBBBBB</color>
+    <color name="key_pad_number">#007fff</color>
+
+</resources>

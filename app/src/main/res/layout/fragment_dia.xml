@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <LinearLayout
+        android:id="@+id/ll_audio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bt_a"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_weight="1"
+            android:drawableLeft="@mipmap/ic_recorder_small"
+            android:padding="1dp"
+            android:text="说话"
+            android:textSize="7sp" />
+
+        <Button
+            android:id="@+id/bt_b"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_weight="1"
+            android:drawableLeft="@mipmap/ic_recorder_small"
+            android:padding="1dp"
+            android:text="speach"
+            android:textSize="7sp"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_below="@+id/ll_audio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="8"
+            android:background="#ffffff" />
+
+        <Button
+            android:id="@+id/enter"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="2"
+            android:background="@drawable/enter_tran"
+            android:focusable="true" />
+    </LinearLayout>
+
+
+
+</RelativeLayout>

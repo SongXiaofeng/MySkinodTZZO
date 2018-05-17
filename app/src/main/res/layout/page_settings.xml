@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@mipmap/main_background"
+
+    >
+
+      <TextView
+          android:id="@+id/settings_tv1"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="@string/num_four"
+          android:textColor="@android:color/white"
+          android:textSize="@dimen/main_text1_size"
+          android:layout_marginTop="@dimen/main_text_layout_marginTop"
+          android:layout_marginLeft="@dimen/main_text_layout_marginLeft"
+          />
+
+
+      <TextView
+          android:id="@+id/settings_tv2"
+          android:layout_below="@+id/settings_tv1"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="@string/settings"
+          android:textColor="@android:color/white"
+          android:textSize="@dimen/main_text2_size"
+          android:layout_marginLeft="@dimen/main_text_layout_marginLeft"/>
+
+
+      <ImageView
+          android:id="@+id/settings_iv"
+          android:layout_below="@+id/settings_tv2"
+          android:layout_marginLeft="@dimen/main_text_layout_marginLeft"
+          android:layout_width="@dimen/iv_width"
+          android:layout_height="@dimen/iv_width"
+          android:background="@mipmap/ic_settings"
+          android:layout_marginTop="@dimen/iv_layout_marginTop"
+          />
+
+</RelativeLayout>

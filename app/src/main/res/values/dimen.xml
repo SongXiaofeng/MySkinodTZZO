@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="main_text1_size">24sp</dimen>
+    <dimen name="main_text2_size">24sp</dimen>
+    <dimen name="main_text_layout_marginLeft">20dp</dimen>
+    <dimen name="indicatorView_layout_marginTop">520dp</dimen>
+    <dimen name="main_text_layout_marginTop">100dp</dimen>
+    <dimen name="iv_layout_marginTop">20dp</dimen>
+    <dimen name="iv_width">30dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+</resources>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Copyright (C) 2010 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:key="display_settings"
+    android:title="@string/display_settings"
+    >
+
+    <PreferenceScreen
+        android:key="wifi"
+        android:title="@string/wifi">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.skinod.tzzo.skinod.wifi.WifiConnectActivity"
+            android:targetPackage="com.skinod.tzzo" />
+    </PreferenceScreen>
+
+    <PreferenceScreen
+        android:key="wifi_spot"
+        android:title="@string/wifi_spot">
+    </PreferenceScreen>
+
+
+    <PreferenceScreen
+        android:key="brightness"
+        android:title="@string/brightness">
+        <intent android:action="android.intent.action.SHOW_BRIGHTNESS_DIALOG" />
+    </PreferenceScreen>
+
+    <ListPreference
+        android:entries="@array/screen_timeout_entries"
+        android:entryValues="@array/screen_timeout_values"
+        android:key="screen_timeout"
+        android:title="@string/screen_timeout" />
+
+    <com.skinod.tzzo.skinod.setting.SeekBarPreference
+        android:defaultValue="0"
+        android:key="media_volume"
+        android:max="15"
+        android:title="@string/media_volume_option_title" />
+
+    <!-- Device hardware model -->
+    <Preference android:key="device_model"
+        android:enabled="false"
+        android:shouldDisableView="false"
+        android:title="@string/model_number"
+        />
+
+
+
+    <Preference android:key="build_number"
+        android:enabled="false"
+        android:shouldDisableView="false"
+        android:title="@string/build_number"
+        />
+
+    <PreferenceScreen android:key="wireless_update"
+        android:title="@string/wireless_update">
+        <intent android:targetPackage="com.adups.fota"
+            android:targetClass="com.adups.fota.GoogleOtaClient"/>
+    </PreferenceScreen>
+
+    <PreferenceScreen android:key="delete_data"
+        android:title="@string/delete_data"
+        />
+
+
+    <!-- Media volume -->
+<!--    <SeekBarPreference
+        android:icon="@*android:drawable/ic_audio_media"
+        android:key="media_volume"
+        android:title="@string/media_volume_option_title" />
+
+    &lt;!&ndash; Alarm volume &ndash;&gt;
+    <com.android.settings.notification.VolumeSeekBarPreference
+        android:icon="@*android:drawable/ic_audio_alarm"
+        android:key="alarm_volume"
+        android:title="@string/alarm_volume_option_title" />
+
+    &lt;!&ndash; Ring volume &ndash;&gt;
+    <com.android.settings.notification.VolumeSeekBarPreference
+        android:icon="@*android:drawable/ic_audio_ring_notif"
+        android:key="ring_volume"
+        android:title="@string/ring_volume_option_title" />-->
+
+
+    <!--        <com.android.settings.TimeoutListPreference
+                    android:key="screen_timeout"
+                    android:title="@string/screen_timeout"
+                    android:summary="@string/screen_timeout_summary"
+                    android:entries="@array/screen_timeout_entries"
+                    android:entryValues="@array/screen_timeout_values" />-->
+
+
+    <!--
+
+            <PreferenceScreen
+                    android:key="font_size"
+                    android:title="@string/title_font_size"
+                    android:fragment="com.android.settings.accessibility.ToggleFontSizePreferenceFragment"
+                    settings:keywords="@string/keywords_display_font_size" />-->
+    <!--
+
+            <PreferenceScreen
+                    android:key="custom_font_size"
+                    android:title="@string/title_font_size"
+                    android:fragment="com.android.settings.accessibility.CustomToggleFontSizePreferenceFragment"
+                    settings:keywords="@string/keywords_custom_display_font_size" />
+    -->
+
+
+</PreferenceScreen>

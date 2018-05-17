@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_ll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+ <!--   android:background="@mipmap/main_background"-->
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#99ddff" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bt_chooseLan_a"
+            android:layout_width="0dp"
+            android:layout_height="38dp"
+            android:layout_weight="4"
+            android:drawableStart="@mipmap/china_small_32"
+            android:textColor="@drawable/text_lan_choose"
+            android:textSize="12sp" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="28dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="2"
+            android:focusable="false"
+            android:clickable="false"
+            android:background="@mipmap/image_tran" />
+
+        <Button
+            android:id="@+id/bt_chooseLan_b"
+            android:layout_width="0dp"
+            android:layout_height="38dp"
+            android:layout_weight="4"
+            android:drawableStart="@mipmap/america_small_32"
+            android:textColor="@drawable/text_lan_choose"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#99ddff" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="3" />
+
+   <!-- <LinearLayout
+        android:id="@+id/ll_audio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/my_blue"
+        android:visibility="visible">
+
+        <Button
+            android:id="@+id/bt_speak_left"
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_weight="1"
+            android:drawableLeft="@mipmap/ic_recorder_small"
+            android:padding="1dp"
+            android:text="说话"
+            android:textSize="7sp" />
+
+        <Button
+            android:id="@+id/bt_speak_right"
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_weight="1"
+            android:drawableLeft="@mipmap/ic_recorder_small"
+            android:padding="1dp"
+            android:text="speach"
+            android:textSize="7sp" />
+    </LinearLayout>-->
+
+</LinearLayout>
+
